@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMvc.Data;
+using SalesWebMvc.Services;
 
 namespace SalesWebMvc
 {
@@ -41,6 +42,7 @@ namespace SalesWebMvc
                     builder => builder.MigrationsAssembly("SalesWebMvc"))); // Pacote para utilização do MySQL
 
             services.AddScoped<SeedingService>(); // Ingestão de classe
+            services.AddScoped<SellerService>(); // Ingestão de Serviço
 
         }
 
