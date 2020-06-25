@@ -43,6 +43,7 @@ namespace SalesWebMvc
 
             services.AddScoped<SeedingService>(); // Ingestão de classe
             services.AddScoped<SellerService>(); // Ingestão de Serviço
+            services.AddScoped<DepartmentService>(); // Ingestão de Serviço
 
         }
 
